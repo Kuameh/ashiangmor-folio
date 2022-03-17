@@ -10,5 +10,8 @@
     "portfolio"
   ],
   "author": "Ashiangmor Caleb",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }

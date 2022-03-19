@@ -75,3 +75,23 @@ section {
     margin: 1em;
   }
 }
+
+.hero {
+  .img {
+    // &::before {
+    //   content: 'A';
+    //   position: absolute;
+    //   top: 0;
+    //   float: left;
+    //   margin-top: -700px;
+    //   margin-left: -5%;
+    //   color: $secondary;
+    //   opacity: 0.1;
+    //   font-size: 80rem;
+    // }
+  }
+
+  .txt-display > h4 {
+    font-size: 4.5rem;
+  }
+}

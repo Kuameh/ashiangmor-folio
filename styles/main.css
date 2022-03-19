@@ -11290,4 +11290,8 @@ body {
   background-repeat: no-repeat;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+}
+
+section {
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */

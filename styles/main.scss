@@ -4,3 +4,19 @@ $secondary: #821238;
 
 //imports bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+//custom styles
+body {
+  height: 100%;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    180deg,
+    #e44046 0%,
+    #660e33 58.4%,
+    #2d132c 100%
+  ) !important;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(30px);
+}

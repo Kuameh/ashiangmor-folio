@@ -7,6 +7,12 @@ $light: #fefefe;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 //custom styles
+* {
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
 body {
   height: 100%;
 }

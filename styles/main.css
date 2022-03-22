@@ -11283,6 +11283,7 @@ textarea.form-control-lg {
 }
 * {
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #fefefe;
 }
 
 ::-webkit-scrollbar {

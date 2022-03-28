@@ -11389,7 +11389,7 @@ section {
 }
 
 .experience {
-  height: 100vh;
+  height: 100%;
 }
 .experience .container {
   position: relative;

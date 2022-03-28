@@ -11475,4 +11475,10 @@ section {
   height: 30px;
   border-radius: 1000px;
   z-index: 100;
+}
+
+@media (max-width: 575.98px) {
+  h4, .h4 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

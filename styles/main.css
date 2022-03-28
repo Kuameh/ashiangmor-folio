@@ -11386,4 +11386,93 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 1em;
+}
+
+.experience {
+  height: 100vh;
+}
+.experience .container {
+  position: relative;
+}
+.experience .tree::after {
+  content: "";
+  background-color: #ee4540;
+  width: 5px;
+  height: 100%;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+.experience .line {
+  background-color: #ee4540;
+  width: 5px;
+  height: 100vh;
+  border-radius: 50px;
+}
+.experience .experience-box {
+  position: relative;
+  width: 50%;
+}
+.experience .experience-box .head {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.experience .experience-box .description {
+  font-size: 0.8rem;
+}
+.experience .experience-box:nth-child(odd) {
+  align-self: end;
+}
+.experience .experience-box:nth-child(odd) .wrapper {
+  margin: 0 0 0 3em;
+}
+.experience .experience-box:nth-child(odd) .dot {
+  position: absolute;
+  inset: 50% 0 0 0;
+  transform: translate(-50%, -50%);
+  background-color: #821238;
+  width: 70px;
+  height: 70px;
+  border-radius: 1000px;
+  z-index: 50;
+}
+.experience .experience-box:nth-child(odd) .dot::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ee4540;
+  width: 30px;
+  height: 30px;
+  border-radius: 1000px;
+  z-index: 100;
+}
+.experience .experience-box:nth-child(even) {
+  align-self: start;
+}
+.experience .experience-box:nth-child(even) .wrapper {
+  margin: 0 3em 0 0;
+}
+.experience .experience-box:nth-child(even) .dot {
+  position: absolute;
+  inset: 50% 0 auto auto;
+  transform: translate(50%, -50%);
+  background-color: #821238;
+  width: 70px;
+  height: 70px;
+  border-radius: 1000px;
+  z-index: 50;
+}
+.experience .experience-box:nth-child(even) .dot::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ee4540;
+  width: 30px;
+  height: 30px;
+  border-radius: 1000px;
+  z-index: 100;
 }/*# sourceMappingURL=main.css.map */

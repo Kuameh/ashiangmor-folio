@@ -4,7 +4,9 @@ $secondary: #821238;
 $light: #fefefe;
 
 //imports bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'mixins';
 
 //custom styles
 * {
@@ -49,14 +51,7 @@ h4 {
 
 nav {
   .contact-btn {
-    background: #821238;
-    box-shadow: 0px 4px 50px #660e33;
-    border-radius: 10px;
-    transition: width 0.5s ease-in-out;
-
-    &:active {
-      transform: scale(0.9);
-    }
+    @include btn;
   }
 }
 
@@ -256,8 +251,8 @@ footer {
   padding: 50px 20px 10px 20px;
 
   .logo {
-    font-weight: bold;
-    font-size: 1.3rem;
+   font-weight: bold;
+   font-size: 1.3rem;
   }
 }
 

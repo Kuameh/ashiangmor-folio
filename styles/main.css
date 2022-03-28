@@ -11477,6 +11477,17 @@ section {
   z-index: 100;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  padding: 50px 20px 10px 20px;
+}
+footer .logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
 @media (max-width: 575.98px) {
   h4, .h4 {
     font-size: 3rem;

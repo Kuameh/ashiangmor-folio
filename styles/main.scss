@@ -249,6 +249,18 @@ section {
   }
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  padding: 50px 20px 10px 20px;
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 575.98px) {
   h4 {
     font-size: 3rem;

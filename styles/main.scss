@@ -1,5 +1,250 @@
 //custom variables
 $primary: #ee4540;
+$secondary: #821238;
+$light: #fefefe;
 
 //imports bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+//custom styles
+* {
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: $light;
+}
+
+//custom scrollbar
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #660e33 !important;
+  background-repeat: no-repeat;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9373c;
+  border-radius: 50px;
+}
+
+body {
+  height: 100%;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    180deg,
+    #e44046 0%,
+    #660e33 58.4%,
+    #2d132c 100%
+  ) !important;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(30px);
+}
+
+h4 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+nav {
+  .contact-btn {
+    background: #821238;
+    box-shadow: 0px 4px 50px #660e33;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.nav-link {
+  color: $light !important;
+  opacity: 0.9;
+}
+
+section {
+  height: 100%;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $secondary;
+  position: sticky;
+  top: 0;
+  left: 0;
+  float: left;
+  z-index: 100;
+  height: 100vh;
+  width: 5vw;
+  padding: 2em 1.5em;
+  box-shadow: 8px 4px 20px rgba(46, 46, 46, 0.476);
+  border-radius: 0px 10px 10px 0px;
+
+  .logo {
+    width: 2em;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  svg {
+    fill: #cb283f;
+    width: 2rem;
+    margin: 1em;
+  }
+}
+
+.hero {
+  .img {
+    // &::before {
+    //   content: 'A';
+    //   position: absolute;
+    //   top: 0;
+    //   float: left;
+    //   margin-top: -700px;
+    //   margin-left: -5%;
+    //   color: $secondary;
+    //   opacity: 0.1;
+    //   font-size: 80rem;
+    // }
+  }
+}
+
+.skills {
+  .custom-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7em;
+
+    background: rgba(238, 69, 64, 0.2);
+    box-shadow: 0px 0.5em 67.5723px #2d132c;
+    backdrop-filter: blur(22.5241px);
+
+    border-radius: 0.5em;
+
+    svg {
+      width: 3em;
+      height: 3em;
+    }
+
+    .r1,
+    .r2 {
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
+    }
+  }
+}
+
+.experience {
+  height: 100%;
+
+  .container {
+    position: relative;
+  }
+
+  .tree {
+    &::after {
+      content: '';
+      background-color: $primary;
+      width: 5px;
+      height: 100%;
+      border-radius: 50px;
+
+      position: absolute;
+      left: 50%;
+      top: 0;
+    }
+  }
+
+  .line {
+    background-color: $primary;
+    width: 5px;
+    height: 100vh;
+    border-radius: 50px;
+  }
+
+  .experience-box {
+    position: relative;
+    width: 50%;
+
+    .head {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+    .description {
+      font-size: 0.8rem;
+    }
+  }
+
+  .experience-box:nth-child(odd) {
+    align-self: end;
+
+    .wrapper {
+      margin: 0 0 0 3em;
+    }
+
+    .dot {
+      position: absolute;
+      inset: 50% 0 0 0;
+      transform: translate(-50%, -50%);
+      background-color: $secondary;
+      width: 70px;
+      height: 70px;
+      border-radius: 1000px;
+      z-index: 50;
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 50% 0 0 50%;
+        transform: translate(-50%, -50%);
+        background-color: $primary;
+        width: 30px;
+        height: 30px;
+        border-radius: 1000px;
+        z-index: 100;
+      }
+    }
+  }
+  .experience-box:nth-child(even) {
+    align-self: start;
+
+    .wrapper {
+      margin: 0 3em 0 0;
+    }
+
+    .dot {
+      position: absolute;
+      inset: 50% 0 auto auto;
+      transform: translate(50%, -50%);
+      background-color: $secondary;
+      width: 70px;
+      height: 70px;
+      border-radius: 1000px;
+      z-index: 50;
+
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 50% 0 0 50%;
+        transform: translate(-50%, -50%);
+        background-color: $primary;
+        width: 30px;
+        height: 30px;
+        border-radius: 1000px;
+        z-index: 100;
+      }
+    }
+  }
+}

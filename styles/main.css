@@ -11311,7 +11311,7 @@ body {
           backdrop-filter: blur(30px);
 }
 
-h4 {
+h1 {
   font-size: 4.5rem;
   font-weight: bold;
 }
@@ -11556,7 +11556,7 @@ footer .logo {
 }
 
 @media (max-width: 575.98px) {
-  h4 {
+  h1 {
     font-size: 3rem;
   }
 }/*# sourceMappingURL=main.css.map */

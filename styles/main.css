@@ -11328,8 +11328,7 @@ nav .contact-btn:hover {
 nav .contact-btn:active {
   transform: scale(0.9);
 }
-
-.nav-link {
+nav .nav-link {
   color: #fefefe !important;
   opacity: 0.9;
 }

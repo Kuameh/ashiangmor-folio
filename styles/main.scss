@@ -53,12 +53,13 @@ nav {
   .contact-btn {
     @include btn;
   }
+
+  .nav-link {
+    color: $light !important;
+    opacity: 0.9;
+  }
 }
 
-.nav-link {
-  color: $light !important;
-  opacity: 0.9;
-}
 
 section {
   height: 100%;

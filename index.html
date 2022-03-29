@@ -361,6 +361,22 @@
             </div>
           </div>
         </section>
+        <section class="contact mt-5 pt-5">
+          <div class="container mt-5">
+              <form id="fs-frm" class="mx-3" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyodwdr" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <!-- <label for="full-name">Full Name</label> -->
+                  <input type="text" name="name" id="full-name" placeholder="FULL NAME" required="">
+                  <!-- <label for="email-address">Email Address</label> -->
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" data-tempmail="0">
+                  <!-- <label for="message">Message</label> -->
+                  <textarea rows="5" name="message" id="message" placeholder="MESSAGE" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <div class="submit-btn"><input type="submit" value="Submit"></div>
+              </form>
+          </div>
+        </section>
       </div>
     </div>
 

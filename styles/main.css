@@ -11483,6 +11483,7 @@ section {
 .contact form {
   display: flex;
   flex-direction: column;
+  max-width: 60vw;
 }
 .contact fieldset {
   display: flex;

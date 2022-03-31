@@ -99,7 +99,12 @@ section {
     }
   }
 
+  a {
+    transition: width 0.5s ease-in-out;
+  }
+  
   svg {
+    @include btn-transform;
     fill: #cb283f;
     width: 2rem;
     margin: 1em;

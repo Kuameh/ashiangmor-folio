@@ -11369,10 +11369,19 @@ section {
 .side-nav .logo img {
   width: 100%;
 }
+.side-nav a {
+  transition: width 0.5s ease-in-out;
+}
 .side-nav svg {
   fill: #cb283f;
   width: 2rem;
   margin: 1em;
+}
+.side-nav svg:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+.side-nav svg:active {
+  transform: scale(0.9);
 }
 
 .hero {

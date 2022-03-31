@@ -4,7 +4,9 @@ $secondary: #821238;
 $light: #fefefe;
 
 //imports bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import 'mixins';
 
 //custom styles
 * {
@@ -42,31 +44,34 @@ body {
   backdrop-filter: blur(30px);
 }
 
-h4 {
+h1 {
   font-size: 4.5rem;
   font-weight: bold;
 }
 
 nav {
   .contact-btn {
-    background: #821238;
-    box-shadow: 0px 4px 50px #660e33;
-    border-radius: 10px;
-    transition: width 0.5s ease-in-out;
+    @include btn;
+  }
 
-    &:active {
-      transform: scale(0.9);
-    }
+  .nav-link {
+    color: $light !important;
+    opacity: 0.9;
+  }
+
+  .navbar-toggler{
+    color: $secondary;
+    border: none;
+    padding: .3em;
+    margin: 1em;
+    outline: none;
   }
 }
 
-.nav-link {
-  color: $light !important;
-  opacity: 0.9;
-}
 
 section {
   height: 100%;
+  padding: 3em 0;
 }
 
 .side-nav {
@@ -102,6 +107,8 @@ section {
 }
 
 .hero {
+  height: 100vh;
+
   .img {
     // &::before {
     //   content: 'A';
@@ -246,5 +253,82 @@ section {
         z-index: 100;
       }
     }
+  }
+}
+
+.contact {
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    padding: 0.7em;
+    border: 1px solid $secondary;
+    color: $primary;
+    width: 100%;
+    background-color: #660e3388;
+
+    &::placeholder{
+      color: $light;
+      opacity: .5;
+    }
+
+    &:focus {
+      border: 1px solid $primary;
+      outline: none;
+    }
+  }
+
+  .submit-btn {
+    align-self: center;
+    margin: 2em 0 0 0;
+  }
+
+  input[type='submit'] {
+    width: fit-content;
+    background-color: $secondary;
+    color: $light;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    background: #821238;
+    box-shadow: 0px 4px 50px #660e33;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+
+    &:hover {
+        transform: translateY(-3px) scale(1.03) ;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  padding: 50px 20px 10px 20px;
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 3rem;
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
   </head>
   <body class="bg-gradient">
     <div class="side-nav d-none d-md-flex">
-      <div class="logo"><img src="/assets/logo.png" alt="logo" /></div>
+      <div class="logo"><img src="assets/logo.png" alt="logo" /></div>
       <div class="socials">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,20 +45,19 @@
     </div>
     <div class="container">
       <nav
-        class="navbar navbar-expand-md navbar-light bg-transparent fw-bold ms-5"
+        class="navbar navbar-expand-md navbar-light bg-transparent fw-bold"
       >
-        <div class="container-fluid mt-3">
+        <div class="container-fluid mt-3 justify-content-end">
           <!-- <a href="#" class="navbar-brand">
-            <img src="/assets/logo.png" alt="logo" />
+            <img src="assets/logo.png" alt="logo" />
           </a> -->
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
               <a href="#" class="nav-item nav-link">Home</a>
               <a href="#" class="nav-item nav-link">About</a>
-              <a href="#" class="nav-item nav-link">Portfolio</a>
-              <a href="#" class="nav-item nav-link" tabindex="-1">Reports</a>
-            </div>
+              <a href="#port" class="nav-item nav-link" tabindex="-1">Portfolio</a>
+          </div>
             <div class="navbar-nav ms-auto">
               <a
                 href="#"
@@ -74,21 +73,22 @@
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
           >
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <lottie-player id="hamburger" src="https://assets6.lottiefiles.com/packages/lf20_n79btmob.json" style="width:30px; height: 30px;">"></lottie-player>
           </button>
         </div>
       </nav>
-      <div class="row">
+      <div class="row gap-5 mb-5">
         <section class="col-12 hero pt-5">
           <div class="container">
             <div class="row">
               <div class="col-md-6 img"></div>
               <div class="col-md-6 copy-txt text-light">
                 <div class="txt-display fw-bold">
-                  <h4>Designer.</h4>
-                  <h4>Developer.</h4>
-                  <h4>Thinker.</h4>
-                  <h4>Friend.</h4>
+                  <h1>Designer.</h1>
+                  <h1>Developer.</h1>
+                  <h1>Thinker.</h1>
+                  <h1>Friend.</h1>
                 </div>
                 <p>
                   Hey there, I’m Ashiangmor Caleb. Currently a student of the
@@ -99,7 +99,7 @@
           </div>
         </section>
         <section class="col-12 about text-light">
-          <h4 class="text-center">Who Am I?</h4>
+          <h1 class="text-center">Who Am I?</h1>
           <p class="mx-3 pt-2">
             I'm Ashiangmor Caleb. A student of University of Ghana, in level 100
             offering Bachelor of Science in Mathmatical Science. And here is
@@ -121,7 +121,7 @@
         </section>
         <section class="col-12 skills mt-3">
           <div class="container">
-            <h4 class="text-center">Skills</h4>
+            <h1 class="text-center">Skills</h1>
             <div class="row gap-3 justify-content-center">
               <div class="custom-card col-12 col-md-5 p-4">
                 <div class="skills-head text-center">Graphic Design</div>
@@ -308,11 +308,11 @@
             </div>
           </div>
         </section>
-        <section class="col-12 portfolio" style="height: 100vh">
-          <h4 class="text-center">Portfolio</h4>
+        <section id="port" class="col-12 portfolio" style="height: 100vh">
+          <h1 class="text-center">Portfolio</h1>
         </section>
         <section class="col-12 experience">
-          <h4 class="text-center">Experience</h4>
+          <h1 class="text-center">Experience</h1>
           <div class="container mt-5">
             <div
               class="tree row flex-column gap-4 justify-content-center align-items-centers"
@@ -361,18 +361,40 @@
             </div>
           </div>
         </section>
+        <section class="contact text-center mt-5 pt-5">
+          <h1>Contact</h1>
+          <h6>Let's vibes and get schwifty</h6>
+          <div class="container row justify-content-center mt-5">
+              <form id="fs-frm" class="mx-3" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyodwdr" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <!-- <label for="full-name">Full Name</label> -->
+                  <input type="text" name="name" id="full-name" placeholder="FULL NAME" required="">
+                  <!-- <label for="email-address">Email Address</label> -->
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" data-tempmail="0">
+                  <!-- <label for="message">Message</label> -->
+                  <textarea rows="5" name="message" id="message" placeholder="MESSAGE" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <div class="submit-btn"><input type="submit" value="Submit"></div>
+              </form>
+          </div>
+        </section>
       </div>
     </div>
 
     <footer>
       <div class="container">
-        <div class="row justify-content align-items-center">
+        <div class="row justify-content-center align-items-center text-center">
           <div class="logo col-12 col-md-5">Ashiangmor</div>
-          <div class="copy col-12 col-md-5">&copy; 2022 | Made with ❤</div>
+          <div class="copy col-12 col-md-7">
+            &copy; 2022 @popcornpie | Made with ❤
+          </div>
         </div>
       </div>
     </footer>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="scripts/lottie-config.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

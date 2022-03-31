@@ -11341,6 +11341,7 @@ nav .navbar-toggler {
 }
 
 section {
+  min-height: 100vh;
   height: 100%;
   padding: 3em 0;
 }
@@ -11369,15 +11370,29 @@ section {
 .side-nav .logo img {
   width: 100%;
 }
+.side-nav a {
+  transition: width 0.5s ease-in-out;
+}
 .side-nav svg {
   fill: #cb283f;
   width: 2rem;
   margin: 1em;
 }
+.side-nav svg:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+.side-nav svg:active {
+  transform: scale(0.9);
+}
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
+.hero img {
+  max-width: 28em;
+}
+
 .skills .custom-card {
   display: flex;
   justify-content: space-around;
@@ -11564,5 +11579,11 @@ footer .logo {
 @media (max-width: 575.98px) {
   h1 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 767.98) {
+  .hero img {
+    position: initial;
+    transform: none;
   }
 }/*# sourceMappingURL=main.css.map */

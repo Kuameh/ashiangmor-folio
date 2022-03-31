@@ -70,6 +70,7 @@ nav {
 
 
 section {
+  min-height: 100vh;
   height: 100%;
   padding: 3em 0;
 }
@@ -99,7 +100,12 @@ section {
     }
   }
 
+  a {
+    transition: width 0.5s ease-in-out;
+  }
+  
   svg {
+    @include btn-transform;
     fill: #cb283f;
     width: 2rem;
     margin: 1em;
@@ -107,7 +113,9 @@ section {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+
 
   .img {
     // &::before {
@@ -121,6 +129,9 @@ section {
     //   opacity: 0.1;
     //   font-size: 80rem;
     // }
+  }
+  img{
+    max-width: 28em;
   }
 }
 
@@ -330,5 +341,14 @@ footer {
 @media (max-width: 575.98px) {
   h1 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 767.98){
+  .hero{
+    img{
+      position: initial;
+      transform: none;
+    }
   }
 }

@@ -58,6 +58,14 @@ nav {
     color: $light !important;
     opacity: 0.9;
   }
+
+  .navbar-toggler{
+    color: $secondary;
+    border: none;
+    padding: .3em;
+    margin: 1em;
+    outline: none;
+  }
 }
 
 
@@ -291,7 +299,19 @@ section {
     color: $light;
     font-weight: bold;
     text-transform: uppercase;
-    @include btn;
+    
+    background: #821238;
+    box-shadow: 0px 4px 50px #660e33;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+
+    &:hover {
+        transform: translateY(-3px) scale(1.03) ;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
   }
 }
 

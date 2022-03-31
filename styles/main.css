@@ -11332,6 +11332,13 @@ nav .nav-link {
   color: #fefefe !important;
   opacity: 0.9;
 }
+nav .navbar-toggler {
+  color: #821238;
+  border: none;
+  padding: 0.3em;
+  margin: 1em;
+  outline: none;
+}
 
 section {
   height: 100%;

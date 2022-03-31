@@ -11341,6 +11341,7 @@ nav .navbar-toggler {
 }
 
 section {
+  min-height: 100vh;
   height: 100%;
   padding: 3em 0;
 }
@@ -11385,8 +11386,13 @@ section {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
+.hero img {
+  max-width: 28em;
+}
+
 .skills .custom-card {
   display: flex;
   justify-content: space-around;
@@ -11573,5 +11579,11 @@ footer .logo {
 @media (max-width: 575.98px) {
   h1 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 767.98) {
+  .hero img {
+    position: initial;
+    transform: none;
   }
 }/*# sourceMappingURL=main.css.map */
